@@ -144,6 +144,16 @@ class Matrix
     
          return val;
     }
+    vector<double> getColumnVector(int c)
+    {
+         assert(c<column);
+         vector<double> col;
+         for(int i=0;i<row;i++)
+         {
+	    col.push_back(mat[i][c]);
+	  }
+          return col;
+    }
         
 };
 // Friend Functions //
